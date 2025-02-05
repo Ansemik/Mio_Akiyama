@@ -1,0 +1,426 @@
+
+/* Source Code */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);
+/* Animations */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/No.css);
+/* Fonts https://nfld99.github.io/Better-Discord/Font_List.txt */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/No.css);
+/* Settings Dock */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Popup/Yes.css);
+/* Channels */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Channels/No.css);
+/* Chat Title Bar */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Chat_Title_Bar/No.css);
+/* Invites */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Invites/No.css);
+/* Member List */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Members/No.css);
+/* Windows Bar */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Windows_Bar/No.css);
+/* Offline Members */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Offline/No.css);
+/* User Popout Footer */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Popout_Footer/Yes.css);
+/* Transparency Patch */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Transparency/No.css);
+/* Use Chat Bubbles By Shiz */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Chat_Bubbles/No.css);
+:root {
+  --Main-Colour: rgba(0,172,234,1);
+  --Background-Colour: rgba(0,0,0,1);
+  --Secondary-Background-Colour: rgba(0,0,0,.3);
+  --Secondary-Main-Colour: rgba(0,172,234,.5);
+  --Text-Shadow-Colour: rgba(0,0,0,.65);
+  --Scroller-Colour: rgba(0,172,234,0);
+  --Notification-Colour: rgba(0,172,234,1);
+  --Chat-Input-Background: rgba(0,0,0,0);
+  --Chat-Input-Colour: var(--Main-Colour) ;
+  --Unread-Message-1: var(--Main-Colour) ;
+  --Unread-Message-2: var(--Background-Colour) ;
+  --Chat-Background: url(https://imgur.com/v7KMYff.png);
+  --Settings-Background: url(https://media.discordapp.net/attachments/1288499187612254261/1336208880426029198/2.png?ex=67a44a7e&is=67a2f8fe&hm=5acce58c417910ef24a28f2c3989e8730ac8f1ed36006f134d03100744b3e52b&=&quality=lossless);
+  --Callout-Background: url(https://media.discordapp.net/attachments/1288499187612254261/1336208880426029198/2.png?ex=67a44a7e&is=67a2f8fe&hm=5acce58c417910ef24a28f2c3989e8730ac8f1ed36006f134d03100744b3e52b&=&quality=lossless);
+  --Title-Background: var(--Background-Colour);
+  --Theme-Variant: " Mio Akiyama";
+  --Chat-Font-Used: "Whitney";
+  --Chat-Font-Size: 15px;
+  --Unread-Message-Speed: 1.5s;
+  --Popout-Main-Colour: var(--Main-Colour);
+  --Popout-Background: var(--Chat-Background);
+  --Popout-Text-Shadow-Colour:var(--Text-Shadow-Colour);
+  --Emote-Popout-Background: var(--Secondary-Background-Colour);
+  --load1: "Thank You!";
+  --load2: "Please Enjoy!";
+  --load3: "➢NFLD99";
+  --File-Updated-2020-5-24: ;
+  --Settings-Dock-Colour: var(--Main-Colour);
+  --Timestamp-Colour: var(--Secondary-Main-Colour);
+  --Guild-Columns: 2;
+  --ServerFolders-Guild-Columns: var(--Guild-Columns);
+  --Chat-Avatar-Border-Radius: 10%;
+  --Background-Darkness: 0.5;
+    /* horizontal side bar*/
+  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 45px));
+  --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 5px));
+  --server-container: calc(var(--server-size) + 20px);
+  --server-direction: var(--HSL-server-direction, column);
+  --server-alignment: var(--HSL-server-alignment, flex-start);
+}
+
+.chatCounter_XOMPsh{
+  right:0!important;
+}
+.menu_c1e9c4{
+  background: url(https://media.discordapp.net/attachments/1288499187612254261/1336327213166891008/10.png?ex=67a40ff3&is=67a2be73&hm=a4301492c693f57e8d7de0eca7f9dbe1d84b5ecea5942ff717f56679c71c8c8c&=&quality=lossless) ;
+  background-size: contain;
+}
+.tutorialContainer__1f388{
+  margin-top: 10px;
+}
+#app-mount .serverCount_FsTTs1{
+  transform: rotate(-90deg);
+  
+}
+.label_2wRs_g{
+  text-transform: lowercase;
+}
+
+#app-mount .guilds_c48ade {
+  width: var(--server-container);
+}
+#app-mount .guilds_c48ade .scrollerWrap-1IAIlv {
+  width: calc(100% + 30px);
+}
+#app-mount .guilds_c48ade .svg_cc5dd2,
+#app-mount .guilds_c48ade .wrapper_cc5dd2,
+#app-mount .guilds_c48ade .guildsError-b7zR5H,
+#app-mount .guilds_c48ade .placeholderMask__87847 {
+  width: var(--server-size);
+  height: var(--server-size);
+}
+#app-mount .guilds_c48ade [role=group] {
+  height: auto !important;
+}
+#app-mount .guilds_c48ade [class*=expandedFolderBackground] {
+  width: var(--server-size);
+  left: 50%;
+  translate: -50% 0;
+}
+#app-mount .guilds_c48ade .wrapper__58105 {
+  height: var(--server-size) !important;
+}
+#app-mount .guilds_c48ade .wrapper__48112 {
+  width: var(--server-container);
+}
+#app-mount .guilds_c48ade [class*=listItem]:not([class*=listItemWrapper]) {
+  width: var(--server-container)!important;
+}
+#app-mount .guilds_c48ade [class*=listItem]:not([class*=listItemWrapper]) {
+  width: var(--server-size)!important;
+  transform: rotate(90deg);
+  margin: 0 10px;
+  position: unset;
+}
+
+#app-mount .app_a3002d .base_c48ade {
+  top: var(--server-container) !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+}
+#app-mount .sidebar_c48ade {
+  border-radius: 0;
+}
+#app-mount [class*=unreadMentionsIndicator] {
+  width: var(--server-size);
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+}
+#app-mount .guilds_c48ade {
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  height: 100vw !important;
+  top: var(--server-container);
+  bottom: unset;
+  position: absolute !important;
+  left: 0;
+}
+#app-mount .guilds_c48ade > [data-list-id=guildsnav] {
+  margin-bottom: 0 !important;
+}
+#app-mount .guilds_c48ade .scrollerBase_d125d2 {
+  padding: var(--server-spacing) 0 !important;
+  display: flex;
+  flex-direction: var(--server-direction);
+  gap: var(--server-spacing);
+  align-items: var(--server-alignment);
+  justify-content: var(--server-alignment);
+ 
+}
+#app-mount .guilds_c48ade .scrollerBase_d125d2 > div[style]:not(.listItem-2P_4kh) {
+  height: auto !important;
+}
+#app-mount .guilds_c48ade .scrollerBase_d125d2 > div[style]:not(.listItem-2P_4kh)[style*="height: 0px"] {
+  padding-top: 1px;
+}
+#app-mount .guilds_c48ade .scrollerBase_d125d2 > div[aria-label] {
+  display: flex;
+  flex-direction: var(--server-direction);
+  gap: var(--server-spacing);
+}
+#app-mount .guilds_c48ade [class*=pill] {
+  transform: rotate(90deg) translateY(50%);
+  height: var(--server-size)!important;
+  width: 4px;
+  top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
+  margin-left: 0px;
+}
+#app-mount .guilds_c48ade [class*=pill] span {
+  height: 100% !important;
+  width: 4px !important;
+  transform: scale(0, 1) !important;
+  transition: 0.15s ease !important;
+  margin-left: 0px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: calc(var(--server-size) / 2 + 30px) ;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 0"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 1"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 2"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 3"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 4"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 5"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 6"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 7"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 8"] {
+  transform: scale(1, 0.24) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 9"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 10"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 11"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 12"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 13"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 14"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 15"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 16"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 17"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 18"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 19"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 20"] {
+  transform: scale(1, 0.7) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 21"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 22"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 23"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 24"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 25"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 26"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 27"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 28"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 29"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 30"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 31"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 32"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 33"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 34"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 35"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 36"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 37"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 38"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 39"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade [class*=pill] span[style*="height: 40"] {
+  transform: scale(1, 1) !important;
+}
+#app-mount .guilds_c48ade .wrapper__48112 {
+  display: flex;
+  flex-direction: var(--server-direction);
+  gap: var(--server-spacing);
+}
+#app-mount .guilds_c48ade .wrapper__48112 ul[role=group] {
+  display: flex;
+  flex-direction: var(--server-direction);
+  gap: var(--server-spacing);
+}
+
+#app-mount .guilds_c48ade [class*=guildSeparator] {
+  transform: rotate(90deg);
+  width: var(--server-size);
+}
+#app-mount .guilds_c48ade [class*=expandedFolderBackground] {
+  border-radius: 10px;
+  height: 100%;
+}
+#app-mount .guilds_c48ade .folder__48112 {
+  background: transparent;
+}
+#app-mount .guilds_c48ade .wrapper_d144f8 {
+  top: 0;
+  bottom: 0;
+}
+#app-mount .guilds_c48ade .target_d144f8::before {
+  top: 0;
+  height: var(--server-size);
+  width: 4px;
+  left: -6px;
+}
+#app-mount .guilds_c48ade.hidden_ef3116 + .base_c48ade {
+  top: 0 !important;
+}
+#app-mount [class*=listItemTooltip] {
+  position: absolute;
+  max-width: unset;
+  white-space: nowrap;
+  margin-left: calc(var(--server-size) / -1 - 20px);
+  top: calc(var(--server-size) - 10px);
+}
+#app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
+  transform: rotate(180deg);
+  top: -5px !important;
+  right: unset;
+  left: 13px;
+  z-index: 1;
+}
+#app-mount .friendsOnline-2JkivWm, #app-mount .friendsOnline_2JkivW {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: calc(-50% + var(--server-spacing));
+  left: -50%;
+  width: calc(var(--server-size) + var(--server-spacing));
+  display: flex;
+  justify-content: center;
+}
+#app-mount .guilds_c48ade.content_Pph8t6,
+#app-mount .BF-folderSidebar {
+  position: absolute !important;
+  top: calc(var(--server-container) * 2) !important;
+}
+#app-mount .guilds_c48ade.content_Pph8t6:not(.closed-j55_T-) + .base_c48ade,
+#app-mount .BF-folderSidebar:not(.closed-j55_T-) + .base_c48ade {
+  top: calc(var(--server-container) * 2.5) !important;
+}
+#app-mount .guilds_c48ade .frame_oXWS21[class*=listItem] {
+  height: var(--server-size) !important;
+}
+#app-mount .guilds_c48ade .frame_oXWS21[class*=listItem] .wrapper__8436d {
+  height: 100% !important;
+}
+#app-mount .guilds_c48ade .frame_oXWS21[class*=listItem] .button-Jt-tIg {
+  width: 100%;
+  height: 100% !important;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#app-mount .BF-folderSidebar {
+  top: calc(var(--server-container)) !important;
+}
+#app-mount .serverCountWrap_k8F5De {
+  height: var(--server-size);
+}
+#app-mount .serverCount_FsTTs1 {
+  white-space: pre-line;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+html.platform-osx #app-mount .typeMacOS__421ed {
+  width: 100%;
+}
+html.platform-osx #app-mount .base_c48ade {
+  top: calc(var(--server-container) + 30px) !important;
+}
+html.platform-osx #app-mount #pluginNotice {
+  top: 32px;
+  z-index: 100000 !important;
+}
+
+body.folderContentIsOpen_zz6FgW .base_c48ade {
+  transition: 0.2s ease !important;
+}
+
+.accountProfilePopoutWrapper__37e49 {
+  left: 0;
+}
