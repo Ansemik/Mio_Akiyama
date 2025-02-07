@@ -35,6 +35,7 @@
   --Chat-Avatar-Border-Radius: 10%;
   --Background-Darkness: 0.5;
     /* horizontal side bar*/
+    --custom-guild-list-width: calc(var(--server-size) * 1.5)!important;
   --server-size: var(--HSL-server-icon-size, var(--HSL-size, 45px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 5px));
   --server-container: calc(var(--server-size) + 20px);
@@ -56,7 +57,12 @@
         0% 25%);
 
 }
-
+.itemsContainer_ef3116, .tree_ef3116{
+    width:calc(var(--server-size) * 2.5)!important;
+}
+#app-mount .guilds_c48ade .scrollerBase_d125d2 > div[aria-label]{
+    width:calc(var(--server-size) * 2.5)!important;
+}
 .menu_c1e9c4{
   background: url(https://imgur.com/ooqB0Bu.png) ;
   background-size: contain;
