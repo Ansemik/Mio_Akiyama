@@ -299,6 +299,7 @@ div[aria-label="Servers"] .listItem__650eb:nth-of-type(even) .pill_e5445c {
   display: flex;
   flex-direction: var(--server-direction);
   gap: var(--server-spacing);
+  padding-right: 10px;
 }
 #app-mount .guilds_c48ade [class*=pill] {
   /*transform: rotate(90deg) translateY(50%);*/
@@ -3854,4 +3855,7 @@ var {
 
 .modeSelected__2ea32 .icon__2ea32, .modeSelected__2ea32:hover .icon__2ea32, .modeUnreadImportant__2ea32 .icon__2ea32, .modeUnreadImportant__2ea32:hover .icon__2ea32{
     opacity:0.8;
+}
+.wrapper_ef3116 .scroller_ef3116, .wrapper_ef3116 .scroller_ef3116 > [role="tree"], .wrapper_ef3116 .listItem__650eb + div[aria-label]:not([class]){ 
+    margin-right: -5px!important;
 }
