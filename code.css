@@ -1,3 +1,4 @@
+
 :root {
   --Main-Colour: rgba(0,172,234,1);
   --channel-icon: var(--Main-Colour) ;
@@ -13,7 +14,6 @@
   --Unread-Message-2: var(--Background-Colour) ;
   --Chat-Background: url(https://imgur.com/v7KMYff.png);
   --Settings-Background: url(https://imgur.com/v7KMYff.png);
-  --Callout-Background: url(https://imgur.com/v7KMYff.png);
   --Title-Background: var(--Background-Colour);
   --Theme-Variant: " Mio Akiyama";
   --Chat-Font-Used: "Whitney";
@@ -58,7 +58,6 @@
         0% 25%);
 
 }
-/* 2 */
 
 .theme-dark, 
 .visual-refresh.theme-dark, .visual-refresh .theme-dark
@@ -165,10 +164,15 @@
 .theme-dark .children__9293f:after{
 	background:transparent;
 }
-
-
-
-
+.scroller_c1e9c4{
+	Background: hsl(none 0% 0%/0.5);
+	Border-Radius:8px;
+}
+.menu_c1e9c4{
+	background: url(https://imgur.com/ooqB0Bu.png); 
+	background-Size: contain;
+	border:0;
+}
 
 
 .sidebarList_c48ade{
@@ -867,12 +871,12 @@ a {
 .activityText-sLG0UL {
     white-space: pre-wrap;
 }
-
+/*
 .themeDark-3Ap_7i {
     background-color: var(--Background-Colour);
     background-image: url(https://media.giphy.com/media/XMc1Ui9rAFR1m/source.gif);
     color: var(--Main-Colour);
-}
+}*/
 
 .channelNotices-41mJbj .channelNotice-1-XFjC.invite-1D-l1h.new-R6EGhf,
 .channelNotices-41mJbj .channelNotice-1-XFjC.invite-1D-l1h.new-R6EGhf .headerTint-2TF8xq,
@@ -1796,7 +1800,7 @@ a {
 svg.artwork-L5TAwQ {
     display: none;
 }
-
+/*
 .logo_fde715 {
     background: url(https://nfld99.com/Bkg/UI9uFRU.png) 50% 50%/contain no-repeat;
 }
@@ -1804,7 +1808,7 @@ svg.artwork-L5TAwQ {
 .characterBackground-1BPOOJ > .wrapper-1f5byN {
     background-image: url(https://nfld99.com/Bkg/Mcvi43u.png);
 }
-
+*/
 .characterBackground-1BPOOJ {
     background: linear-gradient(270deg, #000000, #000000, var(--Main-Colour), #000000, #000000);
     background-size: 700% 700%;
