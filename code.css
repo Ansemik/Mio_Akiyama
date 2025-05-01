@@ -113,7 +113,23 @@
     margin-bottom: 70px;
 }
 
+.folderGroupBackground__48112 {
+    display:none!important;
+}
+.folderButton__48112{/*
+    margin-left:-17px;
+    scale: 1;*/
+    clip-path: var(--hexagon);
+    border-radius:0;
+    height: var(--server-size)!important;
+    width: var(--server-size)!important;
+}
 
+.folderHeader__48112{
+    margin-right: 30px;
+    height: var(--server-size)!important;
+    width: var(--server-size)!important;
+}
 
 
 
@@ -374,8 +390,8 @@ body.folderContentIsOpen_zz6FgW .base_c48ade {
 #app-mount .guilds_c48ade .wrapper_cc5dd2,
 #app-mount .guilds_c48ade .guildsError-b7zR5H,
 #app-mount .guilds_c48ade .placeholderMask__87847 {
-  width: var(--server-size);
-  height: var(--server-size);
+  width: var(--server-size)!important;
+  height: var(--server-size)!important;
 }
 
 #app-mount .guilds_c48ade [class*=expandedFolderBackground] {
