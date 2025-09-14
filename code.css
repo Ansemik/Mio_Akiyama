@@ -80,20 +80,47 @@
     --background-modifier-active: transparent;/*
 	--space-xs: 0;*/
 }
+.glowContainer_dfb989{
+    color: var(--Main-Colour)!important;
+}
 .channelTextArea_f75fb0{
     margin-bottom:25px!important;
     background: var(--background-tertiary)!important;
 }
+/* fixing and moving typing indication */
 .chatGradient__36d07{
     background:transparent!important;
 }
 .chatGradientBase__36d07{
     background:transparent!important;
 }
+.scrollerContent__36d07{
+    margin-bottom: -80px!important;
+}
+.channelTextArea_f75fb0{
+    margin-bottom:25px!important;
+    background: var(--background-tertiary)!important;
+}
+.base_b88801{
+    top: 63px!important;
+    height: 24px;
+    right: 10px!important;
+}
+
+
+/* ende of fix */
+/* fix char counter that devilb changed to shit for no reason*/
+.chatCounter_c47c43{
+    font-size: 15px!important;
+    bottom: 0.4em!important;
+    right:0!important;
+}
+
 .align-chat-input .scroller__99e7c {
     margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 0px)!important;
     padding-bottom: 0px!important;
 }
+
 /*
 .tutorialContainer__1f388 > .listItem__650eb > .listItemWrapper_dfb2f8{
   width:auto!important;
@@ -2215,9 +2242,6 @@ a.anchor-1MIwyf:hover,
     color: var(--Main-Colour);
 }
 
-.scroller__36d07 {
-    bottom: 11px;
-}
 
 [class="iconVisibility_c69b6d wrapper__2ea32 modeUnreadImportant__2ea32"] {
     background: linear-gradient(to right, var(--Background-Colour), var(--Secondary-Background-Colour), var(--Main-Colour));
