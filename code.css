@@ -137,7 +137,7 @@
 #app-mount .itemsContainer_ef3116, #app-mount .stack_dbd263 {
     gap:0px!important;
 }
-.wrapper_cc5dd2 .folder__48112 {
+.wrapper_cc5dd2 .hiddenVisually_b18fe2 {
     scale: 0.75;
     clip-path: var(--hexagon-server);
 	margin-top: 2px;
@@ -187,7 +187,7 @@
     background-color: var(--background-tertiary)!important;
 }
 
-.privateChannels__35e86 {
+.privateChannels_e6b769 {
     background: var(--bg-overlay-3,var(--background-secondary))!important;
 }
 .theme-dark .scroller__99e7c {
@@ -202,7 +202,7 @@
 .theme-dark .container__2637a{
     background: var(--bg-overlay-2,var(--background-secondary))!important;
 }
-.visual-refresh .sidebar_c48ade:after{
+.visual-refresh .sidebar__5e434:after{
     background: var(--bg-overlay-2,var(--background-secondary))!important;
 }
 .standardSidebarView__23e6b {
@@ -270,10 +270,10 @@
 }
 
 
-.sidebarList_c48ade{
+.sidebarList__5e434{
 	width:300px!important;
 }
-.sidebarResizeHandle_c48ade{
+.sidebarResizeHandle__5e434{
 	display:none!important;
 }
 .linkButtonIcon__972a0{
@@ -329,7 +329,7 @@ button.button__67645, span.button__67645 {
 	height: 2px!important;
 }
 
-.panels_c48ade {
+.panels__5e434 {
     --custom-panels-spacing: 8px!important;
 }
 
@@ -337,7 +337,7 @@ button.button__67645, span.button__67645 {
 html.platform-osx #app-mount .typeMacOS__421ed {
   width: 100%;
 }
-html.platform-osx #app-mount .base_c48ade {
+html.platform-osx #app-mount .base__5e434 {
   top: calc(var(--server-container) + 30px) !important;
 }
 html.platform-osx #app-mount #pluginNotice {
@@ -345,7 +345,7 @@ html.platform-osx #app-mount #pluginNotice {
   z-index: 100000 !important;
 }
 
-body.folderContentIsOpen_zz6FgW .base_c48ade {
+body.folderContentIsOpen_zz6FgW .base__5e434 {
   transition: 0.2s ease !important;
 }
 
@@ -408,7 +408,7 @@ body.folderContentIsOpen_zz6FgW .base_c48ade {
 .iconVisibility_c69b6d:hover .iconItem_c69b6d, .iconVisibility_c69b6d:hover .iconItem_c69b6d{
 	display:block;
 }
-.brand_b3f026.item_b3f026, .themed_b3f026.item_b3f026 {
+.brand_aa8da2.item_aa8da2, .themed_aa8da2.item_aa8da2 {
     color: var(--interactive-normal)!important;
 }
 .contentRegionScroller__23e6b {
@@ -423,37 +423,37 @@ body.folderContentIsOpen_zz6FgW .base_c48ade {
 
 /* CHANNEL GROUPS */
 
-.name__29444 .overflow__82b15 {
+.name__29444 .overflow_b0dfc2 {
     padding: 0 0.5em;
 }
 
 
-#app-mount .guilds_c48ade .scrollerWrap-1IAIlv {
+#app-mount .guilds__5e434 .scrollerWrap-1IAIlv {
   width: calc(100% + 30px);
 }
-#app-mount .guilds_c48ade .svg_cc5dd2,
-#app-mount .guilds_c48ade .wrapper_cc5dd2,
-#app-mount .guilds_c48ade .guildsError-b7zR5H,
-#app-mount .guilds_c48ade .placeholderMask__87847 {
+#app-mount .guilds__5e434 .svg_cc5dd2,
+#app-mount .guilds__5e434 .wrapper_cc5dd2,
+#app-mount .guilds__5e434 .guildsError-b7zR5H,
+#app-mount .guilds__5e434 .placeholderMask__87847 {
   width: var(--server-size)!important;
   height: var(--server-size)!important;
 }
 
-#app-mount .guilds_c48ade [class*=expandedFolderBackground] {
+#app-mount .guilds__5e434 [class*=expandedFolderBackground] {
   width: var(--server-size);
   left: 50%;
   translate: -50% 0;
 }
 
-#app-mount .guilds_c48ade .wrapper__58105 {
+#app-mount .guilds__5e434 .wrapper__58105 {
   height: calc(0.8 * var(--server-size)) !important;
   margin-right:-40px;
 }
-#app-mount .guilds_c48ade .wrapper__48112 {
+#app-mount .guilds__5e434 .folderGroup__48112 {
   width: calc(3 * var(--server-size))!important;
 }
 /*
-#app-mount .app_a3002d .base_c48ade {
+#app-mount .app_a3002d .base__5e434 {
   top:calc(2.5*var(--server-size)) !important;
   position: absolute !important;
   left: 0 !important;
@@ -461,7 +461,7 @@ body.folderContentIsOpen_zz6FgW .base_c48ade {
   bottom: 0;
   max-width: 100%;
 }*/
-#app-mount .sidebar_c48ade {
+#app-mount .sidebar__5e434 {
   border-radius: 0;
 }
 #app-mount [class*=unreadMentionsIndicator] {
@@ -563,21 +563,21 @@ body.folderContentIsOpen_zz6FgW .base_c48ade {
     scale: 0.9;
     clip-path: var(--hexagon-server);
 }*/
-.wrapper__48112{
+.folderGroup__48112{
     width:auto!important;
 }
-.expandedFolderBackground__48112{
+.folderGroupBackground__48112{
     display:none;
 }
 
 /* DIRECT MESSAGES ICONS */
 
-.privateChannels__35e86 .wrapper__44b0c {
+.privateChannels_e6b769 .wrapper__44b0c {
     scale: 1.25;
 }
 /* SERVER LIST DOUBLEUP */
 
-.guilds_c48ade {
+.guilds__5e434 {
     width: 128px;
 }
 /*
@@ -590,7 +590,7 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even):last-child {
     margin-bottom: 5px!important;
 }
 /*
-div[aria-label="Servers"] *//*.wrapper__48112 ul {
+div[aria-label="Servers"] *//*.folderGroup__48112 ul {
     height: unset !important;
 }
 /*
@@ -624,16 +624,16 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
 
 
 
-.content_c48ade {
+.content__5e434 {
   margin-top: var(--custom-guild-list-width);
   overflow: visible !important;
 }
 
-#app-mount .sidebar_c48ade {
+#app-mount .sidebar__5e434 {
   border-radius: 0;
   overflow: visible !important;
 }
-#app-mount .guilds_c48ade {
+#app-mount .guilds__5e434 {
   transform-origin: top left;
   rotate: -90deg;
   height: 100vw !important;
@@ -649,7 +649,7 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
 }
 
 
-.container_c48ade > div[style]:not(.base_c48ade) {
+.container__5e434 > div[style]:not(.base__5e434) {
   width: 100vw !important;
   height: var(--custom-guild-list-width) !important;
   position: absolute;
@@ -657,10 +657,10 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
   pointer-events: none;
   z-index: 1;
 }
-.container_c48ade > div[style]:not(.base_c48ade) .guilds_c48ade {
+.container__5e434 > div[style]:not(.base__5e434) .guilds__5e434 {
   pointer-events: all;
 }
-.container_c48ade > div[style]:not(.base_c48ade) + .base_c48ade .content_c48ade {
+.container__5e434 > div[style]:not(.base__5e434) + .base__5e434 .content__5e434 {
   margin-top: calc(var(--custom-guild-list-width) * 2);
 }
 
@@ -670,7 +670,7 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
     animation: Load4 3s 1 linear, var(--StartUp) 3s 1 linear;
     font-family: var(--Chat-Font-Used) !important;
 }
-.container__37e49, .panels_c48ade{
+.container__37e49, .panels__5e434{
     Background: transparent!important;
     background-color: transparent!important;
 }
@@ -1911,7 +1911,7 @@ svg.artwork-L5TAwQ {
     border-left: none;
 }
 
-.searchBar__35e86 {
+.searchBar_e6b769 {
     box-shadow: none;
 }
 
@@ -2142,7 +2142,7 @@ a.anchor-1MIwyf:hover,
     background: var(--Popout-Background) 50% 50%/cover;
 }
 
-.theme-dark .message__89466 {
+.theme-dark .message_fd14e0 {
     background: var(--Chat-Background) 50% 50%/cover;
 }
 
