@@ -80,6 +80,14 @@
     --background-modifier-active: transparent;/*
 	--space-xs: 0;*/
 }
+.buttons__37e49{
+    gap:0;
+}
+.scroller__99e7c{
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 8px);
+    padding-bottom:0px;
+}
+
 /*
 *:not(.badge-2_fwUZ):not(.wrapper-232cHJ) {
     text-shadow: 0 0 1px var(--Text-Shadow-Colour), 0 0 1px var(--Text-Shadow-Colour), 0 0 1px var(--Text-Shadow-Colour), 0 0 1px var(--Text-Shadow-Colour) !important;
