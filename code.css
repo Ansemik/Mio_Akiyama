@@ -14,7 +14,6 @@
   --Chat-Background: url(https://imgur.com/v7KMYff.png);
   --Settings-Background: url(https://imgur.com/v7KMYff.png);
   --Title-Background: var(--Background-Colour);
-  --Theme-Variant: " Mio Akiyama";
   --Chat-Font-Used: "Whitney";
   --Chat-Font-Size: 15px;
   --Unread-Message-Speed: 1.5s;
@@ -22,9 +21,6 @@
   --Popout-Background: var(--Chat-Background);
   --Popout-Text-Shadow-Colour:var(--Text-Shadow-Colour);
   --Emote-Popout-Background: var(--Secondary-Background-Colour);
-  --load1: "Thank You!";
-  --load2: "Please Enjoy!";
-  --load3: "➢NFLD99";
   --File-Updated-2020-5-24: ;
   --Settings-Dock-Colour: var(--Main-Colour);
   --Timestamp-Colour: var(--Secondary-Main-Colour);
@@ -33,8 +29,9 @@
   --Chat-Avatar-Border-Radius: 10%;
   --Background-Darkness: 0.5;
     /* horizontal side bar*/
+    --guildbar-folder-size: 45px;
     --custom-guild-list-width: calc(var(--server-size) * 2.5);
-  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 55px));
+  --server-size: var(--HSL-server-icon-size, var(--HSL-size,50px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 5px));
   --server-container: calc(var(--server-size) + 20px);
   --server-direction: var(--HSL-server-direction, column);
@@ -67,6 +64,7 @@
     --header-secondary: var(--Secondary-Main-Colour);
     --channels-default: var(--Secondary-Main-Colour);
     --interactive-normal: var(--Secondary-Main-Colour);
+    --interactive-text-default:var(--text-muted);
     --text-normal: var(--Main-Colour);
     --text-muted: var(--Secondary-Main-Colour);
     --background-modifier-hover: transparent;
@@ -164,7 +162,14 @@
 [aria-label="私人訊息"], 
 [aria-label="私信"] {
     margin-bottom: 70px;
+
 }
+[aria-label="Direct Messages"] img, 
+[aria-label="私人訊息"], 
+[aria-label="私信"] {
+    transform: rotate(0deg);
+}
+
 
 .folderGroupBackground__48112 {
     display:none!important;
@@ -174,14 +179,16 @@
     scale: 1;*/
     clip-path: var(--hexagon);
     border-radius:0;
-    height: var(--server-size)!important;
-    width: var(--server-size)!important;
+    height:48px!important;
+    width: 48px!important;
 }
 
 .folderHeader__48112{
-    margin-right: 30px;
-    height: var(--server-size)!important;
-    width: var(--server-size)!important;
+    margin-right: 23px;
+    margin-bottom: 7px;
+    margin-top: -1px;   
+    height:48px!important;
+    width: 48px!important;
 }
 
 
@@ -261,7 +268,7 @@
 	bottom: 15px!important;
 }
 .wrapper__6e9f8{
-	margin-top:5px!important;
+	margin-top:-5px!important;
 
 }
 .theme-dark .children__9293f:after{
@@ -302,14 +309,12 @@ button.button__67645, span.button__67645 {
     color: var(--interactive-normal)!important;
 }
 .upperBadge_cc5dd2{
-	margin-top:17px;
-	margin-right:10px;
+	margin-top:12px;
+	margin-right:8px;
 }
 
-
-
-.visual-refresh .svg_cc5dd2{
-	top:11px;
+.svg_cc5dd2{
+	top:8px;
 }
 
 #app-mount .serverCount_FsTTs1{
@@ -360,15 +365,19 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 .accountProfilePopoutWrapper__37e49 {
   left: 0;
 }
-/*
+
 .icon__6e9f8{
-    transform:rotate(90deg);
-}*/
+    transform:rotate(-90deg);
+}
 .childWrapper__6e9f8{/*
     transform:rotate(90deg);*/
     clip-path: var(--hexagon-server)!important;
-    scale: 0.8;
+    scale: 1;
+   margin-top: 10px;
+   
 }
+
+
 
 .chatCounter_XOMPsh{
   right:0!important;
@@ -387,6 +396,7 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 */
 .pill__1f388{
   position:absolute;
+  margin-top: -3px!important;
 }
 .container_c8ffbb {
     background: var(--bg-overlay-chat,var(--background-secondary));
@@ -443,8 +453,8 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 #app-mount .guilds__5e434 .wrapper_cc5dd2,
 #app-mount .guilds__5e434 .guildsError-b7zR5H,
 #app-mount .guilds__5e434 .placeholderMask__87847 {
-  width: var(--server-size)!important;
-  height: var(--server-size)!important;
+  width: 48px!important;
+  height: 48px!important;
 }
 
 #app-mount .guilds__5e434 [class*=expandedFolderBackground] {
@@ -453,8 +463,8 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
   translate: -50% 0;
 }
 
-#app-mount .guilds__5e434 .wrapper__58105 {
-  height: calc(0.8 * var(--server-size)) !important;
+#app-mount .guilds__5e434 .wrapper__58105 {/*
+  height: calc(0.8 * var(--server-size)) !important;*/
   margin-right:-40px;
 }
 #app-mount .guilds__5e434 .folderGroup__48112 {
@@ -479,9 +489,7 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
   transform: translateX(-50%);
   height: auto;
 }
-.pill__1f388{
-  position:absolute;
-}
+
 
 
 /* CHAT ICONS */
@@ -558,11 +566,12 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 
 .wrapper_cc5dd2 {
     scale: 1.2;
+    margin:3px;
 }
 .wrapper_cc5dd2::before {
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     display: block;
     clip-path: var(--hexagon-server);
 }
@@ -583,6 +592,7 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 .privateChannels_e6b769 .wrapper__44b0c {
     scale: 1.25;
 }
+
 /* SERVER LIST DOUBLEUP */
 
 .guilds__5e434 {
