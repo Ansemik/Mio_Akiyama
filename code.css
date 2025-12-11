@@ -1,3 +1,4 @@
+
 :root {
   --Main-Colour: rgba(0,172,234,1);
   --channel-icon: var(--Main-Colour) ;
@@ -574,6 +575,11 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
     height: 38px;
     display: block;
     clip-path: var(--hexagon-server);
+}
+.acronym__6e9f8{
+    transform:rotate(-90deg);
+    scale:0.8;
+    margin-top: 3px;
 }
 /*
 .wrapper_cc5dd2 .wrapper__8436d {
@@ -2431,3 +2437,6 @@ var {
     left:0!important;
     transform-origin: 0% 50% !important;
 }*/
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div.channelTextArea_f75fb0.channelTextArea__74017 > div > div > div.buttons__74017 > div.button__74017.button__24af7{
+display:none!important;
+}
