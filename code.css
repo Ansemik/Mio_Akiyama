@@ -169,10 +169,11 @@
 [aria-label="私信"] {
     margin-bottom: 70px;
 
-}
-[aria-label="Direct Messages"] img, 
-[aria-label="私人訊息"], 
-[aria-label="私信"] {
+} 
+/* AAAAA*/
+[aria-label="Direct Messages"] img , 
+[aria-label="私人訊息"] img, 
+[aria-label="私信"] img {
     transform: rotate(0deg);
 }
 
@@ -389,9 +390,6 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
   right:0!important;
 }
 
-.label_c1e9c4{
-    color:var(--Main-Colour);
-}
 .codicon[class*=codicon-] {
     font: normal normal normal 16px/1 codicon!important;
 }
