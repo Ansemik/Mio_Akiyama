@@ -67,10 +67,12 @@
     --interactive-text-default:var(--text-muted);
     --input-placeholder-text-default:var(--text-muted);
     --input-border-default:var(--text-muted);
+    --icon-muted: var(--text-muted);
     --control-secondary-text-default:var(--Secondary-Main-Colour);
     --text-normal: var(--Main-Colour);
     --text-default: var(--Main-Colour);
     --text-muted: var(--Secondary-Main-Colour);
+    --text-strong:var(--Main-Colour);
     --background-modifier-hover: transparent;
     --interactive-hover: var(--Main-Colour);
     --interactive-muted: var(--Secondary-Main-Colour);
