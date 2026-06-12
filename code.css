@@ -11,6 +11,7 @@
   --Chat-Input-Background: rgba(0,0,0,0);
     --background-base-low: rgba(0,0,0,.2);
     --background-base-lower:rgba(0,0,0,.2);
+    --background-base-lowest:rgba(0,0,0,.1);
   --Chat-Input-Colour: var(--Main-Colour) ;
   --Unread-Message-1: var(--Main-Colour) ;
   --Unread-Message-2: var(--Background-Colour) ;
@@ -89,6 +90,8 @@
     --background-base-lower:rgba(0,0,0,.2);/*
 	--space-xs: 0;*/
 }
+
+
 .container_c0c49a{
     display:none!important;
 }
@@ -392,6 +395,7 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
     clip-path: var(--hexagon-server)!important;
     scale: 1;
    margin-top: 10px;
+   margin-left: 4px;
    
 }
 
@@ -477,11 +481,11 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
   left: 50%;
   translate: -50% 0;
 }
-
+/*
 #app-mount .guilds__5e434 .wrapper__58105 {/*
-  height: calc(0.8 * var(--server-size)) !important;*/
+  height: calc(0.8 * var(--server-size)) !important;*//*
   margin-right:-40px;
-}
+}*/
 #app-mount .guilds__5e434 .folderGroup__48112 {
   width: calc(3 * var(--server-size))!important;
 }
@@ -621,10 +625,11 @@ body.folderContentIsOpen_zz6FgW .base__5e434 {
 /*
 div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) {
     transform: translate(40px, -30px);
-    margin-bottom: -55px;
+    margin-bottom: -58px;
+
 }
 /*
-div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even):last-child {
+div[aria-label="Servers"] *//*.listItem__650eb:nth-of-type(even):last-child {
     margin-bottom: 5px!important;
 }
 /*
@@ -632,20 +637,21 @@ div[aria-label="Servers"] *//*.folderGroup__48112 ul {
     height: unset !important;
 }
 /*
-div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
+div[aria-label="Servers"] *//*.listItem__650eb:nth-of-type(even) .pill_e5445c {
     left: unset;
     right: unset;
     scale: -1;
 
-}
+}/*
 .pill_e5445c{
   position:absolute;
-}
+}*/
 .listItem__650eb {
     position: relative;;
     display: flex;
     justify-content: center;
     width: var(--custom-guild-list-width)!important;
+    margin-left: -10px!important;
 }
 
 
@@ -663,7 +669,7 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
 
 
 .content__5e434 {
-  margin-top: var(--custom-guild-list-width);
+  margin-top: calc(var(--custom-guild-list-width) - 10px);
   overflow: visible !important;
 }
 
@@ -722,11 +728,11 @@ div[aria-label="Servers"] */.listItem__650eb:nth-of-type(even) .pill_e5445c {
     vertical-align: middle;
     min-height: 3rem;
     max-height: 90vh;
-}
+}/*
 .wrapper__58105{
   width:5px!important;
   margin-left:5px;
-}
+}*/
 .wrapperSimple_cc5dd2{
   border-radius: 0px!important;
 }
@@ -2453,4 +2459,42 @@ var {
 }*/
 #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div.channelTextArea_f75fb0.channelTextArea__74017 > div > div > div.buttons__74017 > div.button__74017.button__24af7{
 display:none!important;
+}
+.listItem__650eb:nth-of-type(odd) .wrapper__58105 {
+  left: 0px !important;
+  right: auto !important;
+  margin: 0 !important;
+  width: 8px !important;
+}
+.listItem__650eb:nth-of-type(odd) .item__58105 {
+  border-radius: 0 4px 4px 0 !important;
+}
+#app-mount .item__58105 {
+  margin-inline-start: 0px !important;
+  width: 4px !important; 
+}
+.listItem__650eb:nth-of-type(odd) .wrapper__58105 {
+  left: 15px !important;
+  right: auto !important;
+  margin: 0 !important;
+  margin-top: -2px !important;
+  width: 4px !important;
+}
+.listItem__650eb:nth-of-type(odd) .item__58105 {
+  border-radius: 0 4px 4px 0 !important;
+}
+.listItem__650eb:nth-of-type(even) .wrapper__58105 {
+  left: 80px !important; 
+  right: auto !important;
+  margin: 0 !important;
+  width: 4px !important;
+}
+.listItem__650eb:nth-of-type(even) .item__58105 {
+  border-radius: 4px 0 0 4px !important;
+}
+.root_bfe55a{
+    background: var(--background-base-lowest)!important;
+}
+.channelChatWrapper_cb9592, .wrapper_cb9592{
+    background: var(--background-base-lowest)!important;
 }
