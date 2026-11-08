@@ -9,6 +9,7 @@
   --Scroller-Colour: rgba(0,172,234,0);
   --Notification-Colour: rgba(0,172,234,1);
   --Chat-Input-Background: rgba(0,0,0,0);
+  --background-gradient-chat:rgba(0,0,0,.1);
     --background-base-low: rgba(0,0,0,.2);
     --background-base-lower:rgba(0,0,0,.2);
     --background-base-lowest:rgba(0,0,0,.1);
@@ -56,7 +57,13 @@
         55% 100%, 
         0% 70%, 
         0% 30%);
-
+  --hexagon-home:  polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%);
 }
 
 .theme-dark, 
@@ -72,9 +79,11 @@
     --icon-strong: var(--interactive-active);
     --interactive-normal: var(--Secondary-Main-Colour);
     --interactive-text-default:var(--text-muted);
+    --interactive-text-active: var(--interactive-active);
     --input-placeholder-text-default:var(--text-muted);
     --input-border-default:var(--text-muted);
     --icon-muted: var(--text-muted);
+    --icon-subtle: var(--interactive-active);
     --control-secondary-text-default:var(--Secondary-Main-Colour);
     --text-normal: var(--Main-Colour);
     --text-default: var(--Main-Colour);
@@ -89,6 +98,9 @@
     --background-modifier-selected: transparent;
     --interactive-active: var(--Main-Colour);
     --background-modifier-active: transparent;
+    --border-subtle:0;
+    --radius-md:0;
+    --app-frame-border:0;
     --background-base-low: rgba(0,0,0,.2);
     --background-base-lower:rgba(0,0,0,.2);/*
 	--space-xs: 0;*/
@@ -123,9 +135,9 @@
 #app-mount .guilds__5e434,
 #app-mount [class*="guilds_"] {
   position: fixed !important;
-  top: var(--custom-app-top-bar-height, 30px) !important;
+  top: calc(var(--custom-app-top-bar-height) - 5px) !important;
   left: 0 !important;
-  width: var(--custom-guild-list-width, 120px) !important;
+  width: calc(var(--custom-guild-list-width) - 2px) !important;
   height: 100vw !important;
   transform-origin: top left !important;
   transform: translateY(var(--custom-guild-list-width, 110px)) rotate(-90deg) !important;
@@ -136,7 +148,7 @@
 #app-mount .base_pog62O > .content_pog62O,
 #app-mount .base__5e434 > .content__5e434,
 #app-mount [class*="base_"] > [class*="content_"] {
-  margin-top: var(--custom-guild-list-width, 110px) !important;
+  margin-top: calc(var(--custom-guild-list-width) - 5px) !important;
 }
 
 #app-mount .wrapper_cc5dd2,
@@ -180,7 +192,7 @@
 [aria-label="Direct Messages"], 
 [aria-label="私人訊息"], 
 [aria-label="私信"] {
-  margin-bottom: 60px !important;
+  margin-bottom: 55px !important;
 }
 
 
@@ -192,22 +204,6 @@
   display: none !important;
 }
 
-.tutorialContainer_rwEpIL,
-.tutorialContainer_1IyMuq,
-.tutorialContainer__1f388,
-[class*="tutorialContainer_"] {
-  margin-top: 18px !important; 
-  margin-bottom: 8px !important;
-}
-.listItemWrapper_tQErD4{
-    transform: rotate(90deg)!important;
-    padding-bottom: 0px!important;
-    clip-path: var(--hexagon-server)!important;
-}
-
-.wrapper_JJ-hgR.selected_JJ-hgR .childWrapper_JJ-hgR, .wrapper_JJ-hgR:hover .childWrapper_JJ-hgR{
-    margin-top: 8px!important;
-}
 
 .chat_z_gUBg, .sidebar_pog62O:after, .scroller_Bce46W{
     background: transparent!important;
@@ -296,10 +292,10 @@ display:none!important;
   margin-top: -10px !important;
   width: 4px !important;
   transform: rotate(180deg);
-}
+}/*
 #app-mount > div.appAsidePanelWrapper_YRXZu0 > div > div.app_YRXZu0 > div > div.layers_Fd0FEH.layers_QbT-Jy > div > div > div > div.content_pog62O > div.sidebar_pog62O.theme-dark.theme-midnight.images-dark > nav > div.tree_5dqHTG > div > div.tutorialContainer_1IyMuq > div > div{
     margin:0!important;
-}
+}*/
 .root_rTsZa_{
     background: var(--background-base-lowest)!important;
 }
@@ -352,5 +348,35 @@ display:none!important;
     top: 0px;
 }
 .icon_JJ-hgR{
+    transform: rotate(90deg)!important;
+}
+.tutorialContainer_rwEpIL,
+.tutorialContainer_1IyMuq,
+.tutorialContainer__1f388,
+[class*="tutorialContainer_"] {
+  margin-top: 18px !important; 
+  margin-bottom: 8px !important;
+}/*
+.listItemWrapper_tQErD4{
+    transform: rotate(90deg)!important;/*
+    padding-bottom: 0px!important;*//*
+    clip-path: var(--hexagon-server)!important;
+}*/
+.wrapper_JJ-hgR.selected_JJ-hgR .childWrapper_JJ-hgR, .wrapper_JJ-hgR:hover .childWrapper_JJ-hgR{
+    clip-path: var(--hexagon-home)!important;
+    transform: rotate(90deg)!important;
+}
+#app-mount > div.appAsidePanelWrapper_YRXZu0 > div > div.app_YRXZu0 > div > div.layers_Fd0FEH.layers_QbT-Jy > div > div > div > div.content_pog62O > div.sidebar_pog62O.theme-dark.theme-midnight.images-dark > nav > div.tree_5dqHTG > div > div.tutorialContainer_1IyMuq > div > div > span{
+    margin-top: 8px;
+    height:35px;
+}
+.theme-dark .themed_ybUK7Z{
+    background: var(--Secondary-Background-Colour)!important;
+}
+.chat_z_gUBg[data-has-border=true]{
+    border:0!important;
+}
+.childWrapper_JJ-hgR{
+    clip-path: var(--hexagon-home)!important;
     transform: rotate(90deg)!important;
 }
