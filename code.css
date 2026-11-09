@@ -110,11 +110,15 @@
 /*.high-contrast-mode .container_ybUK7Z, .theme-midnight .container_ybUK7Z{
     border-bottom:  1px solid rgb(100,200,200, 0.1);
 }*/
-.menu_M3qk4j{
-	background: url(https://imgur.com/ooqB0Bu.png); 
+.menu_M3qk4j{	
+    background: url(https://imgur.com/ooqB0Bu.png); 
 	background-Size: contain;
 	border:0;
 }
+.has-webkit-scrollbar .scrollerWithScrollbar_M3qk4j{
+    background: rgba(0,0,0,.5)!important;
+}
+
 .theme-dark .iconForeground_g6VwXp, .button_9OQtot .contents_9OQtot{
     color: var(--interactive-active)!important;
 }
