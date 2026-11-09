@@ -218,7 +218,9 @@
 }
 .layer_Fd0FEH{
     background: var(--Chat-Background)!important;
-    background-position-x: left -30px!important;
+    background-size:cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
 }
 .privateChannels_u88IQl{
     background: var(--background-primary)!important;
